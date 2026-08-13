@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "outputDirectory": ".next",
+  "nodeVersion": "22.11.0",
+  "cloudFunctions": {
+    "nodejs": {
+      "includeFiles": [],
+      "maxDuration": 120
+    }
+  },
+  "agents": {
+    "dir": "agents",
+    "timeout": 1800,
+    "sandbox": {
+      "timeout": 3600
+    }
+  }
+}
